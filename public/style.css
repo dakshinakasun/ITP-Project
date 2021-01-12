@@ -1,0 +1,764 @@
+.search-box {
+	box-sizing: content-box;
+	position: absolute;
+	top: 8%;
+	right: 3%;
+	transform: translate(0%, 100%);
+	background: #2f3640;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+
+	width: 240px;
+	padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+
+	background: white;
+}
+
+.search-btn {
+
+	color: #1273eb;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+
+
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+
+/***************Apointment Form Css**************/
+
+.wrapper{
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	margin: 20px auto;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+	padding: 4% 5%;
+	background-color: #ced9e2;
+	border-radius: 4%;
+  }
+  
+  .wrapper .title{
+	font-family: cursive;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: #1273eb;
+	text-transform: uppercase;
+	text-align: center;
+  }
+  
+  .wrapper .form{
+	width: 100%;
+  }
+  
+  .wrapper .form .inputfield{
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+  }
+  
+  .label {
+	 width: 40%;
+	 color: #757575;
+	 margin-right: 10px;
+	font-size: 14px;
+  }
+
+  .label-dt{
+	width: 18%;
+	color: #757575;
+	margin-right: 10px;
+   font-size: 14px;
+  }
+
+  .dlabel{
+	width: 300px;
+	color: #757575;
+	margin-right: 10px;
+   font-size: 14px;
+  }
+  
+
+  
+  .wrapper .form .inputfield .input ,
+  .wrapper .form .inputfield .date-select {
+	width: 210%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+  }
+  
+  .wrapper .form .inputfield .date-select{
+	width: 100%;
+	resize: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select{
+	position: relative;
+	border-radius: 8px;
+	width: 101%;
+	height: 37px;
+	
+  }
+
+  .wrapper .form .inputfield .custom_selectd{
+	position: relative;
+	border-radius: 80px;
+	width: 210%;
+	height: 37px;
+	
+  }
+  
+  .wrapper .form .inputfield .custom_select:before{
+	content: "";
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	border: 8px solid;
+	border-color: #d5dbd9 transparent transparent transparent;
+	pointer-events: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select select{
+	-webkit-appearance: none;
+	-moz-appearance:   none;
+	appearance:        none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 1px solid #d5dbd9;
+	border-radius: 7px;
+  }
+
+  .wrapper .form .inputfield .custom_selectd select{
+	-webkit-appearance: none;
+	-moz-appearance:   none;
+	appearance:        none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 1px solid #d5dbd9;
+	border-radius: 7px;
+  }
+  
+  
+  .wrapper .form .inputfield .input:focus,
+  .wrapper .form .inputfield .textarea:focus,
+  .wrapper .form .inputfield .custom_select select:focus{
+	border: 1px solid #1273eb;
+  }
+  
+  .wrapper .form .inputfield p{
+	 font-size: 14px;
+	 color: #757575;
+  }
+  .wrapper .form .inputfield .check{
+	width: 15px;
+	height: 15px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+  }
+  .wrapper .form .inputfield .check {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+  }
+  .wrapper .form .inputfield .check {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #1273eb;
+	display: block;
+	position: relative;
+  }
+  .wrapper .form .inputfield .check {
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 2px;
+	width: 5px;
+	height: 2px;
+	border: 2px solid;
+	border-color: transparent transparent #fff #fff;
+	transform: rotate(-45deg);
+	display: none;
+  }
+  .wrapper .form .inputfield .check {
+	background: #1273eb;
+  }
+  
+  .wrapper .form .inputfield .check {
+	display: block;
+  }
+  
+  .wrapper .form .inputfield .appointment-btn {
+
+	width: 80%;
+	border:0;
+	background: #3498db;
+	display: block;
+	margin: 20px 140px;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	font-size: 15px;
+	padding: 8px 10px;
+	outline: none;
+	color: white;
+	border-radius: 8px;
+	transition: 0.25s;
+	cursor: pointer;
+  } 
+ 
+  @media (max-width:420px) {
+	.wrapper .form .inputfield{
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+	.wrapper .form .inputfield label{
+	  margin-bottom: 5px;
+	}
+	.wrapper .form .inputfield.terms{
+	  flex-direction: row;
+	}
+  }
+
+
+  /***************Appointment form ************************/
+
+  .inputfield .appointment-edit-btn ,.appointment-delete-btn {
+	width: 80%;
+	border:0;
+	background: #3498db;
+	display: block;
+	margin: 20px;
+	margin-top: 10%;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	font-size: 15px;
+	padding: 8px 10px;
+	outline: none;
+	color: white;
+	border-radius: 8px;
+	transition: 0.25s;
+	cursor: pointer;
+
+  }
+
+  .wrapper .form .inputfield .form-date,
+  .form-date ,
+  .form-num{
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+  }
+
+  .inputfield-num input {
+	width: 25%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+  }
+
+  .inputfield-date input{
+	width: 80%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+  }
+  
+  .wrapper .form .inputfield .form-date, .form-num{
+
+	resize: none;
+  }
+
+  .form-app-date{
+
+	margin: 0% 11%;
+  }
+
+  .wrapper .form .inputfield-date label{
+	width: 150px;
+	color: #757575;
+	margin-right: 10px;
+	margin-left: 0%;
+   font-size: 14px;
+  } 
+  
+  .wrapper .form .inputfield-num label  {
+	width: 106px;
+	color: #757575;
+	margin-right: 10px;
+   font-size: 14px;
+ }
+
+  .wrapper .form .inputfield-num{
+	
+    display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+
+}
+
+  .wrapper .form .inputfield-date {
+	margin-bottom: 20px;
+	margin-top: -9.5%;
+	margin-left: 59%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+  /**********Bill**************/
+
+.topic{
+	margin-left: 50%;
+	margin-top: 5%;
+	font-family: cursive;
+	color: #1273eb;
+}
+
+.company-details , .customer-details{
+	margin-left: 3%;
+
+
+}
+
+.company-details {
+	margin-top: -7%;
+}
+
+.bill-details .input{
+	margin-right: 25%;
+}
+
+.bill-details .inputfield {
+	margin-left: 10%;
+}
+
+.customer-details .inputfield label {
+	align-items: center;
+	width: 5%;
+ }
+
+ .bill-details .inputfield .invoice-date{
+	 margin-right: 2%;
+ }
+
+.customer-details .inputfield .input ,
+.bill-details .inputfield .input,
+.bill-details .inputfield .date{
+	width: 20%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 8px;
+	margin-bottom: 5px;
+
+ }
+
+.bill-details {
+	margin: 20px auto;
+	padding: 30px;
+	background-color: #ced9e2;
+}
+
+
+/************ Bill Table **************/
+
+.bill-title {
+
+    font-family: cursive;
+    text-align: center;
+    margin: 3%;
+}
+
+.table-responsive .bill-table {
+  border-collapse: collapse;
+  width: 95%;
+  margin-left:2.5%; 
+  margin-right:15%;
+}
+
+.table-responsive-sm .bill-table {
+
+  border-collapse: collapse;
+  width: 20%;
+  margin-left:74.5%; 
+  margin-right:15%;
+  margin-top: 3%;
+} 
+
+.table-responsive-sm .bill-table .input{
+
+	margin-left: 23%;
+}
+
+th, td {
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.table-responsive .table-topic {
+  text-align: center;
+  background-color: #1273eb;
+  color: white;
+}
+
+.sub-tot{
+	text-align: center;
+}
+
+.table-responsive .bill-table .input,
+.table-responsive-sm .bill-table .input {
+
+    width: 90%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+.input-des {
+    width: 97%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+
+}
+
+.amount, .unit, .qty {
+
+    width: 15%;
+}
+
+.no {
+    width: 5%;
+}
+
+.table-responsive .bill-table .no{
+
+    text-align: center;
+}
+
+.table-responsive-sm .bill-table .tot{
+
+    text-align: left;
+}
+
+.bill-custome-div{
+
+	margin-top: -12%;
+	margin-left: 8%;
+
+}
+
+.bill-custome-div .inputfield-bill-type label {
+	width: 130px;
+	 margin-right: 10px;
+	font-size: 14px;
+	margin-bottom: 2%;
+}
+
+.bill-custome-div .inputfield-bill-period label {
+	width: 170px;
+	 margin-right: 10px;
+	font-size: 14px;
+}
+
+.inputfield-bill-period .days {
+	margin-left: 10px;
+}
+
+.custom-select{
+    position: relative;
+    border-radius: 3px;
+    width: 10%;
+    height: 37px;
+    
+  }
+  
+.custom-select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+.custom-select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+
+  .bill-btn{
+	margin: 10% 2%;
+  }
+
+.Bill-btn-save ,.Bill-btn-clear, .Bill-btn-update {
+
+    width: 15%;
+    background: #3498db;
+	margin: 20px auto;
+	margin-left: 1%;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    font-size: 15px;
+    padding: 8px 10px;
+    outline: none;
+    color: white;
+    border-radius: 0px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.Bill-btn-print {
+
+ 
+    width: 15%;
+    background: #3498db;
+    margin: 3% 0% 0% 50%;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    font-size: 15px;
+    padding: 8px 10px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.Bill-details-btn-update{
+
+	width: 15%;
+    background: #3498db;
+	margin: 20px auto;
+	margin-left: 8%;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    font-size: 15px;
+    padding: 8px 10px;
+    outline: none;
+    color: white;
+    border-radius: 0px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.Bill-details-btn-print{
+
+	width: 15%;
+    background: #3498db;
+    margin: 3% 0% 0% 57%;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    font-size: 15px;
+    padding: 8px 10px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+
+
+/************ Appointment Details Table **************/
+.appo-topic{
+	margin-left: 35%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-family: cursive;
+	color: #1273eb;
+}
+
+.bill-title {
+
+    font-family: cursive;
+    text-align: center;
+    margin: 3%;
+}
+
+.appo-table-responsive .appo-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.appo-table-responsive-sm .appo-table {
+
+  border-collapse: collapse;
+  width: 20%;
+  margin-left:74.5%; 
+  margin-right:15%;
+  margin-top: 3%;
+} 
+
+.appo-table-responsive-sm .appo-table .input{
+
+	margin-left: 23%;
+}
+
+th, td {
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.appo-table-responsive .table-topic {
+  text-align: center;
+  background-color: #1273eb;
+  color: white;
+}
+
+
+.appo-table-responsive .appo-table .input,
+.appo-table-responsive-sm .bill-table .input {
+
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+.input-des {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+
+}
+
+.fname {
+
+    width: 10%;
+}
+
+.id {
+    width: 5%;
+}
+
+.appo-table-responsive .appo-table .id{
+
+    text-align: center;
+}
+
+.appo-table-responsive-sm .appo-table {
+
+    text-align: left;
+}
+
+.appo-btn-update{
+
+	width: 100%;
+    background: #3498db;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    font-size: 15px;
+    padding: 8px 10px;
+    outline: none;
+    color: white;
+    border-radius: 0px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+.appo-btn-delete{
+
+	width: 100%;
+    background: #3498db;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    font-size: 15px;
+    padding: 8px 10px;
+    outline: none;
+    color: white;
+    border-radius: 0px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+.appo-btn-download{
+
+	width: 22.4%;
+	margin-left: 77%;
+    margin-top: 3%;
+    background: #3498db;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    font-size: 15px;
+    padding: 8px 10px;
+    outline: none;
+    color: white;
+    border-radius: 0px;
+    transition: 0.25s;
+	cursor: pointer;
+	
+
+}
